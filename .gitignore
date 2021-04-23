@@ -1,0 +1,5 @@
+# Configuration with download url for tracking file
+config.json
+
+# Runtime
+node_modules

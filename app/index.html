@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VP-Stunden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Versuchspersonenstunden</h1>
+    <span class="subtitle">am Lehrstuhl für Medieninformatik</span>
+    <span class="information">Auf dieser Seite können Sie prüfen, wie viele absolvierte Versuchspersonenstunden am <a href="https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/aktuelles/index.html">Lehrstuhl für Medieninformatik</a> für Ihre Person erfasst wurden. Es handelt sich dabei um die <a href="https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/studium/versuchspersonenstunden/index.html">Versuchspersonenstunden</a>, die Sie für das Bachelorstudium der Medieninformatik auf der
+        Modulpostion
+        <emph>MEI-BA-M10.4</emph> einbringen möchten. Bitte geben Sie dazu Ihre Matrikelnummer ein. Die Angaben sind ohne Gewähr und werden aus Datenschutzrechtlichen Gründen nur als Gesamtsumme übermittelt. Details zu den Experimenten, an denen Sie teilgenommen
+        haben, können Sie über dieses Formular nicht einsehen. Bei Fragen zu diesem Formular wenden Sie sich bitte an Alexander Bazo (<a href="mailto:alexander.bazo@ur.de">alexander.bazo@ur.de</a>)</span>
+    <div class="vp-request-form">
+        <input class="matriculation-number" name="matriculation-number" value="" placeholder="1234567">
+        <label class="matriculation-number-label" for="matriculationNumber">Ihre Matrikelnummer</label>
+        <input class="request-button" type="submit" value="VPs anfragen">
+    </div>
+    <div class="waiting hidden">Daten werden geladen ...</div>
+    <div class="results hidden">
+        <span class="vps">12</span>
+        <span class="description">VPs wurden bereits für die angegebene Matrikelnummer dokumentiert</span>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

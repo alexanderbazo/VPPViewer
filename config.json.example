@@ -1,0 +1,6 @@
+{
+    "trackingFileURL": "PATH_TO_TRACKING_FILE",
+    "csvSeparator": "SEPARATOR",
+    "csvHeaders": ["HEADER_ONE", "HEADER_TWO"],
+    "firstLineWithData": 1
+}
