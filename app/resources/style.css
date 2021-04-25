@@ -10,13 +10,16 @@
     display: none;
 }
 
+.disabled {
+    opacity: 0.5;
+}
+
 body {
     width: 50vw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Garamond, serif;
 }
 
 a {
@@ -24,9 +27,13 @@ a {
 }
 
 h1 {
-    margin: 0.5vh 0;
+    margin: 5vh 0 0.5vh 0;
     text-align: center;
     color: var(--slk);
+}
+
+h2 {
+    text-align: center;
 }
 
 .subtitle {
@@ -35,46 +42,70 @@ h1 {
     font-size: 1.25 em;
 }
 
-.information {
-    margin: 2.5vh 0;
-    font-size: 1em;
+.app-description {
+    margin: 2vh 0 0 0;
+    font-size: 1.15em;
     line-height: 1.5em;
     text-align: justify;
 }
 
-.vp-request-form {
+.actions {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 2.5vh;
+    justify-content: space-between;
+    width: 50vw;
 }
 
-.matriculation-number {
+.action-container {
+    flex-basis: 22.25vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.action-description {
+    font-size: 1.15em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.request-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5vh;
+    font-family: "Helvetica", sans-serif;
+}
+
+.request-form .input {
+    width: 90%;
     border-style: solid;
     border-color: var(--neutral);
     border-width: 0 0 2px 0;
     margin-bottom: 1vh;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
+    color: var(--highlight);
 }
 
-.matriculation-number-label {
+.request-form .label {
+    width: 90%;
     text-align: center;
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
     color: var(--neutral);
     text-transform: uppercase;
 }
 
-.request-button {
+.request-form .request-button {
+    width: 80%;
     border-radius: 5px;
     background-color: var(--slk);
     outline: none;
     color: var(--white);
-    font-size: 1.5em;
-    line-height: 2em;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-family: "Helvetica", sans-serif;
 }
 
-.request-button:hover {
+.request-form .request-button:hover {
     cursor: pointer;
 }
 
@@ -84,13 +115,14 @@ h1 {
     text-align: center;
 }
 
-.results .vps {
+.results .value {
     color: var(--slk);
     font-weight: bold;
 }
 
 .waiting {
     color: var(--highlight);
+    text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -100,7 +132,18 @@ h1 {
     h1 {
         font-size: 1.5em;
     }
+    h2 {
+        margin-top: 10vh;
+    }
     .information {
         font-size: 1em;
+    }
+    .actions {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .action-container {
+        width: 90vw;
     }
 }
