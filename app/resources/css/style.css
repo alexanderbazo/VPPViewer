@@ -66,6 +66,15 @@ p {
     color: var(--highlight);
 }
 
+.request-form .input.invalid {
+    color: var(--neutral);
+    border-color: var(--error);
+}
+
+.request-form .input.invalid:after {
+    content: "Fehler";
+}
+
 .request-form .label {
     width: 100%;
     margin-bottom: 1vh;

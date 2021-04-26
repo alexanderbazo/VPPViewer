@@ -5,5 +5,15 @@
     "firstLineWithData": 1,
     "formTemplateFile": "URL_TO_TEMPLATE_FILE",
     "formTargetSheetName": "TARGET_SHEET_IN_EXCEL_TEMPLATE",
-    "notificationAddress": "E-MAIL_TO_RECEIVE_FORM_GENERATION_NOTIFICATIONS"
+    "notificationAddress": "E-MAIL_TO_RECEIVE_FORM_GENERATION_NOTIFICATIONS",
+     "mailer": {
+        "address": "SENDER_ADDRESS",
+        "host": "SMTP_HOST",
+        "port": SMTP_PORT,
+        "secure": USE_SECURE_TRANSPORT,
+        "auth": {
+            "user": "SMTP_USER",
+            "pass": "SMTP_PASSWORT"
+        }
+    }
 }
