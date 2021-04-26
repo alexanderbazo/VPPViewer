@@ -47,11 +47,19 @@ function showResults(results) {
     resultDescriptionElement.scrollIntoView()
 }
 
-function showError() {
+function showError(error) {
     let resultDescriptionElement = resultsElement.querySelector(".description");
     resultDescriptionElement.innerHTML = error;
+    hideWaitingDialog();
     resultDescriptionElement.scrollIntoView();
+
+}
+
+function init() {
+    let requestButton = document.querySelector(".request-form.vps .request-button");
     formElement = document.querySelector(".request-form.vps");
+    waitingDialog = document.querySelector(".vps .waiting");
+    resultsElement = document.querySelector(".vps .results");
     requestButton.addEventListener("click", requestVPRecords);
 }
 
