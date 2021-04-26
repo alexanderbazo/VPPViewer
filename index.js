@@ -11,11 +11,8 @@ var appConfig,
 
 async function handleVPRequest(req, res) {
     let matriculationNumber = req.params.id,
-        vps = await provider.requestDocumentedVPsForStudent(matriculationNumber);
-    res.json({
-        matriculationNumber: matriculationNumber,
-        vps: vps
-    });
+        results = await provider.requestDocumentedVPsForStudent(matriculationNumber);
+    res.json(results);
 }
 
 function setupExpress(port) {

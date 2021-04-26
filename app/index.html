@@ -5,17 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VP-Stunden</title>
-    <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="resources/css/style.css">
 </head>
 
 <body>
-    <h1>Versuchspersonenstunden</h1>
-    <span class="subtitle">am Lehrstuhl für Medieninformatik</span>
-    <span class="app-description">Als Student*in der <a href="https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/aktuelles/index.html" target="_blank" rel="noopener noreferrer">Medieninformatik</a> können Sie auf dieser Seite die <strong>Anzahl Ihrer dokumentierten Versuchspersonenstunden</strong> prüfen und als Versuchsleiter*in eine <strong>Formular zu Dokumentation vergebener Versuchspersonenstunden</strong> generieren. Weitere Informationen zu den <strong>Versuchspersonenstunden</strong> finden Sie auf der entsprechende <a href="https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/studium/versuchspersonenstunden/index.html" target="_blank" rel="noopener noreferrer">Seite des Lehrstuhls</a>. Bei Fragen zu dieser Seite wenden Sie sich bitte an Alexander Bazo (<a href="mailto:alexander.bazo@ur.de">alexander.bazo@ur.de</a>).</span>
+    <h1><strong>Versuchspersonenstunden</strong> am Lehrstuhl für Medieninformatik</h1>
+    <p class="app-description">Als Student*in der <a href="https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/aktuelles/index.html" target="_blank" rel="noopener noreferrer">Medieninformatik</a> können Sie auf dieser Seite die <strong>Anzahl Ihrer dokumentierten Versuchspersonenstunden</strong>        prüfen und als Versuchsleiter*in eine <strong>Formular zu Dokumentation vergebener Versuchspersonenstunden</strong> generieren. Weitere Informationen zu den <strong>Versuchspersonenstunden</strong> finden Sie auf der entsprechende <a href="https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/studium/versuchspersonenstunden/index.html"
+            target="_blank" rel="noopener noreferrer">Seite des Lehrstuhls</a>. Bei Fragen zu dieser Seite wenden Sie sich bitte an Alexander Bazo (<a href="mailto:alexander.bazo@ur.de">alexander.bazo@ur.de</a>).</p>
     <div class="actions">
         <div class="action-container vps">
             <h2>Versuchspersonenstunden prüfen</h2>
-            <p class="action-description">Bitte geben Sie Ihre Matrikelnummer ein um die Anzahl der bereits dokumentierten Versuchspersonenstunden zu erfragen. Die Angaben sind ohne Gewähr und werden aus Datenschutzrechtlichen Gründen nur als Gesamtsumme übermittelt. Details zu den
+            <p class="action-description">Bitte geben Sie Ihre Matrikelnummer ein um die Anzahl der bereits dokumentierten Versuchspersonenstunden zu erfragen. Die Angaben sind ohne Gewähr und werden aus datenschutzrechtlichen Gründen nur als Gesamtsumme übermittelt. Details zu den
                 Experimenten, an denen Sie teilgenommenhaben, können Sie über dieses Formular nicht einsehen.</p>
             <div class="request-form vps">
                 <input class="matriculation-number input" name="matriculation-number" value="" placeholder="1234567">
@@ -24,8 +24,7 @@
             </div>
             <div class="waiting vps hidden">Daten werden geladen ...</div>
             <div class="results vps hidden">
-                <span class="value">12</span>
-                <span class="description">VPs wurden bereits für die angegebene Matrikelnummer dokumentiert</span>
+                <p class="description"></p>
             </div>
         </div>
         <div class="action-container sheet disabled">
@@ -42,15 +41,17 @@
                 <label class="supervisor-label label" for="supervisor">Zuständige Betreuer*in</label>
                 <input class="chair input" name="chair" value="" placeholder="z.B. Medieninformatik" disabled>
                 <label class="chair-label label" for="chair">Zuständiger Lehrstuhl</label>
-                <input class="title input" name="title" value="" placeholder="z.B. VR-Experiment für Bachelorarbeit" disabled>
-                <label class="title-label label" for="supervisor">Art des Experiments</label>
+                <input class="context input" name="context" value="" placeholder="z.B. Masterarbeit" disabled>
+                <label class="context-label label" for="context">Kontext des Experiments</label>
+                <input class="title input" name="title" value="" placeholder="z.B. Fragebogenstudie zu Zoom-Kursen" disabled>
+                <label class="title-label label" for="supervisor">Titel des Experiments</label>
                 <input class="volume input" name="volume" value="" placeholder="z.b. 1 VP" disabled>
                 <label class="volume-label label" for="volume">Geplantes Volumen an vergebenen VPs pro Teilnehmer*in</label>
                 <input class="request-button" type="submit" value="Generieren" disabled>
             </div>
         </div>
     </div>
-    <script src="resources/index.js"></script>
+    <script src="resources/js/index.js"></script>
 </body>
 
 </html>

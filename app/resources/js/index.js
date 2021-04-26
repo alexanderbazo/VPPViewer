@@ -1,5 +1,5 @@
-const RESULT_STRING_POSITIVE = "VPs wurden bereits für die angegebene Matrikelnummer dokumentiert",
-    RESULT_STRING_NEGATIVE = "Für die angegebene Matrikelnummer wurden noch keine VPs dokumentiert";
+const RESULT_STRING_POSITIVE = "Für die angegebene Matrikelnummer wurden bereits <strong>$VP</strong> VPs dokumentiert (<i>Stand $DATE</i>).",
+    RESULT_STRING_NEGATIVE = "Für die angegebene Matrikelnummer wurden noch keine VPs dokumentiert (<i>Stand $DATE</i>).";
 
 function requestVPRecords() {
     let matriculationNumberAsString = document.querySelector(".request-form .matriculation-number").value;
@@ -14,15 +14,14 @@ function requestVPRecords() {
 }
 
 function onResultsAvailable(results) {
-    showVPs(results.vps);
+    showResults(results);
 }
 
-function showVPs(vps) {
-    document.querySelector(".results.vps .value").innerHTML = vps;
-    if (vps !== 0) {
-        document.querySelector(".results.vps .description").innerHTML = RESULT_STRING_POSITIVE;
+function showResults(results) {
+    if (results.vps !== 0) {
+        document.querySelector(".results.vps .description").innerHTML = RESULT_STRING_POSITIVE.replace("$VP", results.vps).replace("$DATE", results.lastEdited);
     } else {
-        document.querySelector(".results.vps .description").innerHTML = RESULT_STRING_NEGATIVE;
+        document.querySelector(".results.vps .description").innerHTML = RESULT_STRING_NEGATIVE.replace("$DATE", results.lastEdited);
     }
     document.querySelector(".waiting.vps").classList.add("hidden");
     document.querySelector(".results.vps").classList.remove("hidden");
@@ -30,7 +29,7 @@ function showVPs(vps) {
 }
 
 function showError(error) {
-    document.querySelector(".results.vps").innerHTML = error;
+    document.querySelector(".results.vps .description").innerHTML = error;
     document.querySelector(".waiting.vps").classList.add("hidden");
     document.querySelector(".results.vps").classList.remove("hidden");
     document.querySelector(".results.vps").scrollIntoView()
