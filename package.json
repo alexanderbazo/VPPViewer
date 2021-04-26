@@ -5,8 +5,8 @@
     "main": "index.js",
     "dependencies": {
         "csv-parser": "^3.0.0",
+        "exceljs": "^4.2.1",
         "express": "^4.17.1",
-        "get-stream": "^6.0.1",
         "node-fetch": "^2.6.1"
     },
     "type": "module",

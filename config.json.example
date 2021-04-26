@@ -1,6 +1,9 @@
 {
-    "trackingFileURL": "PATH_TO_TRACKING_FILE",
+    "trackingFileURL": "URL_TO_TRACKING_FILE",
     "csvSeparator": "SEPARATOR",
     "csvHeaders": ["HEADER_ONE", "HEADER_TWO"],
-    "firstLineWithData": 1
+    "firstLineWithData": 1,
+    "formTemplateFile": "URL_TO_TEMPLATE_FILE",
+    "formTargetSheetName": "TARGET_SHEET_IN_EXCEL_TEMPLATE",
+    "notificationAddress": "E-MAIL_TO_RECEIVE_FORM_GENERATION_NOTIFICATIONS"
 }
