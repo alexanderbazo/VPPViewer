@@ -34,6 +34,8 @@ function requestForm() {
         chair: formElement.querySelector(".chair"),
         context: formElement.querySelector(".context"),
         title: formElement.querySelector(".title"),
+        startDate: formElement.querySelector(".start-date"),
+        endDate: formElement.querySelector(".end-date"),
         volume: formElement.querySelector(".volume"),
     });
     if (validatedElements !== undefined) {

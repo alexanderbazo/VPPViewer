@@ -37,11 +37,15 @@ async function handleFormRequest(req, res) {
     res.set("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
     readStream.pipe(res);
     mailer.sendGeneratorNotification({
-        title: req.body.title,
         researcher: req.body.name,
-        context: req.body.context,
+        contactMail: req.body.email,
         supervisor: req.body.supervisor,
         chair: req.body.chair,
+        context: req.body.context,
+        title: req.body.title,
+        startDate: req.body.startDate,
+        endDate: req.body.endDate,
+        createdAt: new Date(),
         vps: req.body.volume
     });
 }

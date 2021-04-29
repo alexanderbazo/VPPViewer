@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="de>
+    <body>
+        <h1>Benachrichtigung des VP-Listen-Generators</h1>
+        <p>So eben wurde auf <a href="https://vp.software-engineering.education/">vp.software-engineering.education</a> ein neues Formular zur Erfassung von Versuchspersonenstunden erstellt</p>
+        <h2>Übersicht</h2>
+        <table>
+        <thead>
+            <tr>
+                <th>Versuchsleiter*in</th>
+                <th>E-Mail</th>
+                <th>Studientitel</th>
+                <th>Kontext</th>
+                <th>Betreuer*in</th>
+                <th>Lehrstuhl</th>
+                <th>Anzahl VP</th>
+                <th>Geplanter Beginn</th>
+                <th>Geplantes Ende</th>
+                <th>Vp-Formular generiert am</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>$researcher</td>
+                <td>$contactMail</td>
+                <td>$title</td>
+                <td>$context</td>
+                <td>$supervisor</td>
+                <td>$chair</td>
+                <td>$vps</td>
+                <td>$startDate</td>
+                <td>$endDate</td>
+                <td>$createdAt</td>
+            </tr>
+        </tbody>
+        </table>
+        <p>Diese E-Mail wurde automatisch durch den <a href="https://github.com/alexanderbazo/VPPViewer">VPPView</a> generiert und verschickt. Bei technischen Fragen wenden Sie sich bitte an <a href=""></a></p>
+    </body>
+</html>

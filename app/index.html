@@ -31,7 +31,7 @@
             <h2>VP-Formular erstellen</h2>
             <p class="action-description">Bitte geben Sie hier alle notwendigen Informationen zu dem von Ihnen geplanten Versuch ein. Diese werden automatisch in das generierte Formular eingetragen. Mit dem Formular können Sie die vergebenen Versuchspersonenstunden dann nach Abschluss
                 Ihres Experiments an die zuständigen Betreuer*innen oder in Ausnahmefällen auch direkt an das Sekretariat weiterleiten. Bitte beachten Sie: Um einen Überblick über die sich im Umlauf befindlichen Versuchspersonenstunden zu behalten, werden
-                die zur Generierung des Dokuments gemachten Angaben automatisch an den Lehrstuhl übermittelt.</p>
+                die zur Generierung des Dokuments gemachten Angaben automatisch an den Lehrstuhl übermittelt. Wir bitte Sie aus diesem Grund auch, den ungefähren Zeitraum, in dem Sie Versuchspersonenstunden für Ihr Experiment vergeben wollen, zu skizzieren.</p>
             <div class="request-form generator">
                 <input class="name input" name="name" value="" placeholder="Vorname Name" type="text" required>
                 <label class="name-label label" for="name">Ihr Name</label>
@@ -45,7 +45,11 @@
                 <label class="context-label label" for="context">Kontext des Experiments</label>
                 <input class="title input" name="title" value="" placeholder="z.B. Fragebogenstudie zu Zoom-Kursen" type="text" required>
                 <label class="title-label label" for="supervisor">Titel des Experiments</label>
-                <input class="volume input" name="volume" value="" placeholder="z.b. 1 VP" type="number" step="0.25" required>
+                <input class="start-date input" name="start-date" value="" placeholder="1. Januar 1970" type="date" required>
+                <label class="start-date-label label" for="start-date">Geplantes Start des Experiments</label>
+                <input class="end-date input" name="end-date" value="" placeholder="1. Januar 1970" type="date" required>
+                <label class="end-date-label label" for="end-date">Voraussichtliches Ende des Experiments</label>
+                <input class="volume input" name="volume" value="" placeholder="z.b. 1 VP" type="number" min="0.25" step="0.25" required>
                 <label class="volume-label label" for="volume">Geplantes Volumen an vergebenen VPs pro Teilnehmer*in (min 0.25) </label>
                 <input class="request-button" type="submit" value="Generieren">
             </div>
