@@ -46,6 +46,7 @@ async function handleFormRequest(req, res) {
         startDate: req.body.startDate,
         endDate: req.body.endDate,
         createdAt: new Date(),
+        duration: req.body.duration,
         vps: req.body.volume
     });
 }

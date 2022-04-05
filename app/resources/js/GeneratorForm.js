@@ -36,6 +36,7 @@ function requestForm() {
         title: formElement.querySelector(".title"),
         startDate: formElement.querySelector(".start-date"),
         endDate: formElement.querySelector(".end-date"),
+        duration: formElement.querySelector(".duration"),
         volume: formElement.querySelector(".volume"),
     });
     if (validatedElements !== undefined) {

@@ -15,7 +15,8 @@
                 <th>Lehrstuhl</th>
                 <th>Anzahl VP</th>
                 <th>Geplanter Beginn</th>
-                <th>Geplantes Ende</th>
+                <th>Geplantes Ende</th> 
+                <th>Zeitaufwand</th>
                 <th>Vp-Formular generiert am</th>
             </tr>
         </thead>
@@ -30,6 +31,7 @@
                 <td>$vps</td>
                 <td>$startDate</td>
                 <td>$endDate</td>
+                <td>$duration</td>
                 <td>$createdAt</td>
             </tr>
         </tbody>
