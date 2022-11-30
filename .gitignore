@@ -1,6 +1,0 @@
-# Configuration with download url for tracking file
-config.json
-mail.template
-
-# Runtime
-node_modules
